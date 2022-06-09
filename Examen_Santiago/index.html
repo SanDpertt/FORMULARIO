@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./ex.png">
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+    <title>Examen_Santiago</title>
+
+
+</head>
+<body>
+    <h2 id="s2">NOMBRE: Santiago Diaz</h2>
+    <H2 id="s2">PROGRAGAMA DE FORMACIÓN: Programacion de software - ficha: 2428161</H2>
+    <H2 id="s2">PRUEBA</H2>
+
+ <div class="row">   
+    <div id="Productos" class="col-12 col-lg-6">
+        <h1>Productos</h1>
+        <form id="formulario" name="formul" >
+
+            <div class="form-floating">
+                <input type="number" placeholder="Codigo" id="n1" name="n1">
+            </div>
+            <div class="form-floating">
+                <input type="text" placeholder="Nombre" id="n2" name="n2">
+            </div>
+            <div class="form-floating">
+                <input type="number"placeholder="Cantidad" id="n3" name="n3">
+            </div>
+            <div class="form-floating">
+                <input type="number"placeholder="Precio" id="n4" name="n4">
+            </div>
+            <input type="submit" id="button" onclick="insertRowtable();" value="Comprar">
+
+        </form>
+    </div>
+
+    <div id="tabla" class="col-12 col-lg-6">
+        <h1>Cuadro</h1>
+        <table class="table table-striped table-bordered table-hover" id="Cuadro">
+            <thead>
+                <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col" id="p1">Nombre</th>
+                    <th scope="col" id="p2">Cantidad</th>
+                    <th scope="col" id="p3">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+    <script src="./java.js">
+    </script>
+</body>
+</html>
