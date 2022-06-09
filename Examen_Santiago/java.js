@@ -18,7 +18,7 @@ function insertRowtable() {
     var n4 = parseInt(document.getElementById("n4").value);
 
     if (n4 >= 20000){
-        resultado = ((n4 * 0.2 ) - (n4))
+        resultado = ((n4) - (n4 * 0.2 ))  
     }
     else {
         resultado = n4
