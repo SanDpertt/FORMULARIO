@@ -17,10 +17,9 @@ function insertRowtable() {
     var n3 = parseInt(document.getElementById("n3").value);
     var n4 = parseInt(document.getElementById("n4").value);
 
-    if (n4 >= 20000){
-        resultado = ((n4) - (n4 * 0.2 ))  
-    }
-    else {
+    if (n4 >= 20000) {
+        resultado = ((n4) - (n4 * 0.2))
+    } else {
         resultado = n4
     }
 
@@ -31,4 +30,5 @@ function insertRowtable() {
     newCelda3.textContent = n3;
     let newCelda4 = newLineRow.insertCell(3);
     newCelda4.textContent = resultado;
+
 }

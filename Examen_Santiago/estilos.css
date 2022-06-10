@@ -1,21 +1,33 @@
-body{
-    background-image: url(./ba.jpg)
+body {
+    background-image: url(./ba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#Productos{
-    margin-top:50px;
+
+#Productos {
+    padding: 30px;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 250px;
     border-radius: 10px;
     background-color: white;
-    margin-left: 220px;
+    margin-left: 10%;
+    margin-right: 73%;
 }
 
-#tabla{
-    margin-top:50px;
+#tabla {
+    float: left;
+    position: absolute;
+    right: 150px;
+    top: 250px;
+    margin-top: 10px;
+    font-family: cursive;
     border-radius: 10px;
     background-color: aliceblue;
-    margin-left: -400px;
-    
 }
 
-#s2{
-    color: white;
+#button {
+    margin-top: 5px;
+    background-color: azure;
+    border-radius: 1px;
 }

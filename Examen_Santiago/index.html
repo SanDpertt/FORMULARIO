@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +15,12 @@
 
 
 </head>
+
 <body>
-    <h2 id="s2">NOMBRE: Santiago Diaz</h2>
-    <H2 id="s2">PROGRAGAMA DE FORMACÓN: Programacion de software - ficha: 2428161</H2>
-    <H2 id="s2">PRUEBA</H2>
 
- <div class="row">   
-    <div id="Productos" class="col-12 col-lg-6">
+    <div id="Productos">
         <h1>Productos</h1>
-        <form id="formulario" name="formul" >
-
+        <form id="formulario" name="formul">
             <div class="form-floating">
                 <input type="number" placeholder="Codigo" id="n1" name="n1">
             </div>
@@ -31,17 +28,16 @@
                 <input type="text" placeholder="Nombre" id="n2" name="n2">
             </div>
             <div class="form-floating">
-                <input type="number"placeholder="Cantidad" id="n3" name="n3">
+                <input type="number" placeholder="Cantidad" id="n3" name="n3">
             </div>
             <div class="form-floating">
-                <input type="number"placeholder="Precio" id="n4" name="n4">
+                <input type="number" placeholder="Precio" id="n4" name="n4">
             </div>
             <input type="submit" id="button" onclick="insertRowtable();" value="Comprar">
-
         </form>
     </div>
 
-    <div id="tabla" class="col-12 col-lg-6">
+    <div id="tabla" class="col-6">
         <h1>Cuadro</h1>
         <table class="table table-striped table-bordered table-hover" id="Cuadro">
             <thead>
@@ -50,6 +46,7 @@
                     <th scope="col" id="p1">Nombre</th>
                     <th scope="col" id="p2">Cantidad</th>
                     <th scope="col" id="p3">Precio</th>
+                    <th scope="col" id="p3">Ver</th>
                 </tr>
             </thead>
             <tbody>
@@ -58,9 +55,8 @@
         </table>
     </div>
 
-</div>
-
     <script src="./java.js">
     </script>
 </body>
+
 </html>
