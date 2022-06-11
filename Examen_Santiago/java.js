@@ -23,6 +23,7 @@ function insertRowtable() {
         resultado = n4
     }
 
+
     newCelda.textContent = n1;
     let newCelda2 = newLineRow.insertCell(1);
     newCelda2.textContent = n2;
@@ -30,5 +31,23 @@ function insertRowtable() {
     newCelda3.textContent = n3;
     let newCelda4 = newLineRow.insertCell(3);
     newCelda4.textContent = resultado;
+    let newCelda5 = newLineRow.insertCell(4);
+
+    const modal = document.querySelector(".modalDialog");
+    const boton = document.createElement("button");
+    const pmodal = document.getElementById("pr");
+    boton.innerText = "Mostrar";
+    boton.onclick = function() {
+        modal.classList.add("modalDialog--mostrar");
+        pmodal.innerText = "El codigo es: " + n1 + "\n" + "El nombre es: " + n2 + "\n" + "La cantiadad es: " + n3 + "\n" + "El precio es: " + resultado;
+    }
+
+    const cerrarModal = document.querySelector(".close");
+    cerrarModal.addEventListener("click", function() {
+
+        modal.classList.remove("modalDialog--mostrar");
+    })
+
+    newCelda5.appendChild(boton);
 
 }
