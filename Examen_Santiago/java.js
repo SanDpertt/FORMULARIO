@@ -35,8 +35,10 @@ function insertRowtable() {
 
     const modal = document.querySelector(".modalDialog");
     const boton = document.createElement("button");
+    const boton2 = document.createElement("button");
     const pmodal = document.getElementById("pr");
     boton.innerText = "Mostrar";
+    boton2.innerText = "Editar";
     boton.onclick = function() {
         modal.classList.add("modalDialog--mostrar");
         pmodal.innerText = "El codigo es: " + n1 + "\n" + "El nombre es: " + n2 + "\n" + "La cantiadad es: " + n3 + "\n" + "El precio es: " + resultado;
@@ -49,5 +51,7 @@ function insertRowtable() {
     })
 
     newCelda5.appendChild(boton);
+    let newCelda6 = newLineRow.insertCell(5);
+    newCelda6.appendChild(boton2);
 
 }
